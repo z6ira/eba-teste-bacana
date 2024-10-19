@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: #ececec;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #1a1a1a;
+    color: white;
+}
+
+.logo {
+    font-size: 29px;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+}
+
+.span1 {
+    color: greenyellow;
+    font-size: 20px;
+    padding-left: 2px;
+
+}
+
+.span2 {
+    color: yellow;
+    font-size: 20px;
+
+}
+
+.menu {
+    border-radius: 5px;
+}
+
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    left: -66px;
+}
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li:hover > a {
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.center1 {
+    position: relative;
+    top: 0;
+    right: 400px;
+    border-left-style: solid;
+    border-left-color:#a1a1a1;
+    border-left-width: 2px;
+    border-right-style: solid;
+    border-right-color:#a1a1a1;
+    border-right-width: 2px;
+    z-index: 1000;
+}
+
+.center2 {
+    z-index: 1000;
+    position: relative;
+    top: 0;
+    right: 550px;
+}
+
+.center3 {
+    z-index: 1000;
+    position: relative;
+    top: 0;
+    right: 550px;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    top: 50px;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.solucao {
+    height: 230px;
+    width: 300px;
+    position: relative;
+    right: 20px;
+}
+
+.impactos {
+    height: 230px;
+    width: 300px;
+    position: relative;
+    right: 30px;
+}
+
+.desastres {
+    height: 200px;
+    width: 300px;
+    position: relative;
+    right: 30px;
+}
+
+.escondido {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 1s;
+
+}
+
+.apareceu {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1s;
+}
+
+.image-container {
+    position: relative;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 3.1rem;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+    display: flex;
+}
+
+.image.active {
+    opacity: 1;
+    
+}
+
+.hero h1,
+.hero p {
+    position: absolute; 
+    z-index: 10; 
+    color: white; 
+    text-align: center;
+    top: 35vh;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 2rem;
+    margin-top: 5rem; 
+}
+
+.especial {
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.especial p {
+    color: #1a1a1a;
+    cursor: default;
+}
